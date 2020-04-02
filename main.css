@@ -1,0 +1,93 @@
+.page {
+  display:none;
+}
+
+.active {
+  display:block;
+}
+
+.nav-side-menu {
+  background-color:  #ccffcc;
+  height: 100%;
+  position: fixed;
+  overflow: auto;
+  top: 0px;
+  width:200px;
+
+}
+
+#project-search {
+  width: 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 50px;
+  font-size: 16px;
+  background-image: url('searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+#project-search:focus {
+  width:50%;
+}
+
+.jumbotron {
+  background-color: #ffffff;
+  color: black;
+}
+
+.main {
+  padding-left: 220px;
+}
+
+.transparent-input {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid grey;
+}
+
+
+.page-header {
+  padding-bottom: 9px;
+  margin: 40px 0 20px;
+  border-bottom: 1px solid #f5f5f0
+;
+}
+
+#header {
+  padding:15px;
+}
+
+.form-control {
+  border-radius: 0;
+}
+
+.sidebar-nav li {
+  list-style:none;
+  line-height: 40px;
+  text-indent: 20px;
+}
+
+#dashboard {
+  background-color: #f2f2f2;
+}
+
+.container a {
+  text-decoration:none;
+}
+
+.sidebar-nav li a {
+  text-decoration: none;
+  display: block;
+}
+
+
+.sidebar-nav li a:hover {
+  color: #fff;
+  background: rgba(255,255,255,0.2);
+  text-decoration: none;
+}

@@ -1,0 +1,77 @@
+<html>
+
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="main.css">
+
+<head>
+    <meta charset="utf-8">
+    <title>Ortaboard</title>
+    <base href="/">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular-route.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular-resource.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+
+</head>
+
+<body ng-app="app">
+
+  <div class="nav-side-menu">
+    <div class="page-header">
+    <img src="/ortaicon.png" style="width:150px;height:150px;"></img>
+    </div>
+
+
+
+    <div class="border-top my-3"></div>
+
+
+    <div class="container">
+      <div class="nav flex-column nav-pills fixed-left" id="sidebar">
+        <a href="#" id="home-nav" class="nav-link active">Home</a>
+        <a href="#projects" id="projects-nav" class="nav-link">Projects</a>
+        <a href="#" class="nav-link">Account</a>
+      </div>
+    </div>
+
+    <div class="border-top my-3"></div>
+
+
+
+    <div class="logout">
+      <button id="logout-button" class="btn btn-outline-info">
+        <i class="fa fa-sign-out">Log out</i>
+      </button>
+    </div>
+  </div>
+  <div class="main" ng-controller="MainController as main">
+  <div class="row" id="header">
+    <div class="col-8" id="searchbar">
+      <div class="container">
+        <form class="navbar-form" role="search">
+          <div class="input-group add-on">
+            <button class="btn btn-info" type="submit"> <span class="fa fa-search" style="color:white;"></span></button>
+            <input class="form-control transparent-input" placeholder="Search here..." name="srch-term" id="srch-term" type="text"></input>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="col-4" id="account">
+      <div class="container">
+        <button class="btn btn-info" type="submit"><span class="fa fa-bell" style="color:white;"></span></button>
+        <img src="#"> username</img>
+      </div>
+    </div>
+  </div>
+  <div ng-view></div>
+  </div>
+
+
+</body>
+
+
+</html>

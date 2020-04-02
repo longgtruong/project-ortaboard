@@ -1,0 +1,25 @@
+
+
+
+
+
+        <div class="row" id="dashboard">
+        <div class="col-12">
+          <div class="page-header">
+          <h2>Dashboard</h2>
+          </div>
+
+          <div class="container">
+            <h3>Projects     <input type="text" id="project-search" ng-model="searchProject"></input></h3>
+
+
+            <div class="project" ng-repeat="project in main.projects | filter:searchProject">
+            <a href="#project/{{project.code}}">
+              <div class="jumbotron">
+              <h4>{{project.name}}</h4>
+              <p>{{project.description}}</p>
+              </div>
+            </a>
+
+          </div>
+        </div>
